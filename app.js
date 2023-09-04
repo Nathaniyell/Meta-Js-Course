@@ -34,8 +34,15 @@ const operators ={
     lessThan: "<",
     equualTo: "==",
     notEquualTo: "!=",
+    modulusOperator: "%",
     logicalOperators:{
         "&&": "which checks and ensures that both conditions are true",
         "||": "this is used to ensure that at least one of the conditions is true",
+        "!": "returns a false value if the result is true"
     }
 }
+//The number data type represents all integer and decimal numbers
+//The double asterisks can be used to perform exponential operations e.g 10**2 = 100
+//A string is a collection of characters enclosed by single '' or double quotes "" e.g "This is a string"
+//An empty string = ""
+//Strings cannot be broken to the next line
