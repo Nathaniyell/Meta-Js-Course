@@ -32,3 +32,22 @@ while (year < 2023) {
     console.log(year);
     year++;
 };
+
+//Nested loops are used to perform multiple tasks at the same time as shown below
+//It is important to note that the more nested loops there are, the more slow the code will run
+//can be used in instances where one needs automated repetition of code e.g sorting numbers from highest to lowest
+
+for(var week = 1; week<=2; week++){
+    console.log(week);
+    for(var day = 1; day<=5; day++){
+        console.log("Week " + week + " Day " + day)
+    }
+}
+
+//To know the summer months of each year from 2018 to 2023
+for (var year = 2018; year<2024; year++){
+    console.log(year)
+    for(var month = 6; month<9; month++){
+console.log("......... " + month)
+    }
+}
