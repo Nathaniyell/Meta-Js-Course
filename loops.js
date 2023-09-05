@@ -4,6 +4,8 @@ Properties of this loops includes 1. a counter variable -
 var counter(i)= value
 2. a condition - counter > 5
 3. the counter must be incremented (increased or decreased depending on the need) - counter++ or counter--
+The incrementer changes the value of i each time the code inside the loop is run
+
 for(var i = 0; i<5; i++){
     console.log(i)
 }
@@ -14,5 +16,8 @@ while(i<5){
     console.log(i)
 i++
 }
-
 */
+for (var i = 10; i > 0; i--) {
+  console.log(i);
+}
+console.log("Happy New Year!");
