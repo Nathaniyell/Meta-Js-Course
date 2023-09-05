@@ -84,27 +84,3 @@ If the + operator is used to join strings, then it is referred to as the concate
 */
 //Javascript was built in only 10 days in 1995 by a single person, Brendan Eich
 //Node was built in 2009 by Ryan Dahl
-
-
-/*
-Conditional statements are used to run pieces of code to demonstrate if a certain condition is true or false
-*/
-var result = 50
-if(result > 40){
-    console.log("Congratulations you passed the text!")
-}else{
-    console.log("Unfortunately you did not pass the test");
-}
-//Else if
-var position = "first"
-if(position === "first"){
-    console.log("Gold");
-}
-else if(position === "second"){
-    console.log("silver");
-}
-else if(position === "third"){
-    console.log("bronze");
-}else{
-    console.log("No medals");
-}
