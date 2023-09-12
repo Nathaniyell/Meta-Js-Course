@@ -1,4 +1,5 @@
 // Functions help in running the same set of stored instructions repeatedly without requiring you to adjust the settings every time
+//They also help in keeping the code DRY
 
 function addNums() {
   //body of function
@@ -12,3 +13,5 @@ function addTwoNums(a, b) {
   console.log(c);
 }
 addTwoNums(10, 20); //the values passed to the function when invoking it are called arguments
+
+//Function parameters are like variables and the actual values of these parameters are called arguments and are made available when the function is invoked
