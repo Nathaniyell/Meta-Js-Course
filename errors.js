@@ -17,14 +17,14 @@ console.log("This line runs");
 
 try {
   //block of code goes here
-  throw new Error
+  throw new Error();
 } catch (err) {
   console.log(err);
 }
 console.log("This line runs");
 
 try {
- console.log(a+b);
+  console.log(a + b);
 } catch (err) {
   console.log(err);
   console.log("There was an error");
@@ -43,10 +43,26 @@ var noise; //returns undefined
 
 //Trying to access an object property that does not exist will return undefined
 
-var game ={
+var game = {
   score: 40,
-}
-console.log(game.Score) //returns undefined
+};
+console.log(game.Score); //returns undefined
 
 //The empty value is a string with no characters between them
-var empty1 =""
+var empty1 = "";
+
+//Exercise on error handling
+function addTwoNums(a, b) {
+  try {
+    if (typeof a != "number") {
+      throw new ReferenceError("The first argument is not a number");
+    } else if (typeof b != "number") {
+      throw new ReferenceError("The second argument not a number");
+    } else {
+      console.log(a + b);
+    }
+  } catch (err) {
+    console.log("ERROR!", err);
+  }
+}
+addTwoNums(5, "5");
