@@ -3,20 +3,20 @@
 
 //each property is described as a key-value pair, where the usual variableName is the property key while the usual value is the property value here
 
-var storeManager={};
-storeManager.Movement =4;
+var storeManager = {};
+storeManager.Movement = 4;
 storeManager.SocialSkills = 50;
-storeManager.StreetSmart =50;
+storeManager.StreetSmart = 50;
 storeManager.Health = 30;
-console.log(storeManager)
+console.log(storeManager);
 //The above uses the dot notation to build a store manager object
 
-var assistantManager={
-    movement: 3,
-    socialSkills: 30,
-    streetSmart: 30,
-    health: 40,
-}
+var assistantManager = {
+  movement: 3,
+  socialSkills: 30,
+  streetSmart: 30,
+  health: 40,
+};
 //The above explains creating an object an assigning some values to its properties immediately after the ibject is created
 
 //to add a new property to an already existing object, you use the dot notation as shown below
@@ -26,19 +26,19 @@ console.log(storeManager);
 
 //The dot notation can be used to update alreadye existing properties as shown below
 
-assistantManager.health = 50
-console.log(assistantManager)
+assistantManager.health = 50;
+console.log(assistantManager);
 
 //Another way of building or accessing an object is by using the bracket notation and wrapping each property key as a string
 
 //The bracket notation allows you to add space characters inside property names and also add numbers as string dataType
- 
-var house = {}
+
+var house = {};
 house["rooms"] = 4;
-house["colour"]= 'ash';
-house["priceNgn"]= 350000
-house["number of doors"] = 5
-console.log(house)
+house["colour"] = "ash";
+house["priceNgn"] = 350000;
+house["number of doors"] = 5;
+console.log(house);
 
 //JavaScript has handy built-in objects
 /*
@@ -68,15 +68,35 @@ var car = {};
 car.mileage = 98765;
 car.color = "red";
 console.log(car);
-car.turnTheKey = function() {
-    console.log("The engine is running")
-}
-car.lightsOn = function() {
-    console.log("The lights are on.")
-}
+car.turnTheKey = function () {
+  console.log("The engine is running");
+};
+car.lightsOn = function () {
+  console.log("The lights are on.");
+};
 console.log(car);
 car.turnTheKey();
-car.lightsOn()
+car.lightsOn();
 
 //The type of operator accepts and evaluates a parameter and returns the name of the data type represented as a string.
-typeof(car)
+typeof car;
+
+/*OOP
+In OOP, data and functionality are grouped as properties and methods inside objects.
+
+
+*/
+var virtualPet = {
+  sleepy: true, //data
+  nap: function () {}, //functionality||method
+};
+//In OOP, methods update properties stored in the object instead of generating new return values.
+var virtualPet = {
+  sleepy: true,
+  nap: function () {
+    this.sleepy = false;
+  },
+};
+console.log(virtualPet.sleepy) // true
+virtualPet.nap() //this updates the value of the sleep property
+console.log(virtualPet.sleepy) // false
