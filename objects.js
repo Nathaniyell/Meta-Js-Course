@@ -63,3 +63,20 @@ Return the minimum and maximum values of all the inputs: Math.min(9,8,7) returns
 
  Trigonometric methods: Math.sin(), Math.cos(), Math.tan()
 */
+//A function that is a property of an object is called a method
+var car = {};
+car.mileage = 98765;
+car.color = "red";
+console.log(car);
+car.turnTheKey = function() {
+    console.log("The engine is running")
+}
+car.lightsOn = function() {
+    console.log("The lights are on.")
+}
+console.log(car);
+car.turnTheKey();
+car.lightsOn()
+
+//The type of operator accepts and evaluates a parameter and returns the name of the data type represented as a string.
+typeof(car)
