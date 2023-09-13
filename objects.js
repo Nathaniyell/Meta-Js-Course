@@ -18,3 +18,8 @@ var assistantManager={
     health: 40,
 }
 //The above explains creating an object an assigning some values to its properties immediately after the ibject is created
+
+//to add a new property to an already existing object, you use the dot notation as shown below
+
+storeManager.nextAchievement = "Open a new store";
+console.log(storeManager);
