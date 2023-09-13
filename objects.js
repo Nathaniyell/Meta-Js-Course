@@ -23,3 +23,19 @@ var assistantManager={
 
 storeManager.nextAchievement = "Open a new store";
 console.log(storeManager);
+
+//The dot notation can be used to update alreadye existing properties as shown below
+
+assistantManager.health = 50
+console.log(assistantManager)
+
+//Another way of building or accessing an object is by using the bracket notation and wrapping each property key as a string
+
+//The bracket notation allows you to add space characters inside property names and also add numbers as string dataType
+ 
+var house = {}
+house["rooms"] = 4;
+house["colour"]= 'ash';
+house["priceNgn"]= 350000
+house["number of doors"] = 5
+console.log(house)
