@@ -10,3 +10,11 @@ storeManager.StreetSmart =50;
 storeManager.Health = 30;
 console.log(storeManager)
 //The above uses the dot notation to build a store manager object
+
+var assistantManager={
+    movement: 3,
+    socialSkills: 30,
+    streetSmart: 30,
+    health: 40,
+}
+//The above explains creating an object an assigning some values to its properties immediately after the ibject is created
