@@ -1,7 +1,7 @@
 //ReferenceError occurs when a variable has not been defined but you attempt to use it in your code
 //An error is a faulty piece of code that prevents the program from further execution
 //Syntax error occurs when you write a piece of code that javascript cannot read - var greet="hello
-//running an array method on a number would return a type error - (5).pop
+//A TypeError is thrown when, for example, trying to run a method on a non-supported data type. - (5).pop
 
 //try and catch keywords can be used to try a block of code and possibly catch any errors if there is one
 
@@ -22,3 +22,13 @@ try {
   console.log(err);
 }
 console.log("This line runs");
+
+try {
+ console.log(a+b);
+} catch (err) {
+  console.log(err);
+  console.log("There was an error");
+  console.log("There error was served in the error log");
+}
+console.log("my program does not stop");
+//The benefit of using a try and catch block is that even if javascript experiences an error during execution, it will not stop executing other pieces of code
