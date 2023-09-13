@@ -51,3 +51,20 @@ function example() {
   if (counter === 0) return;
   example();
 }
+
+//Scope is about accessibility of variables
+//The code that exist outside of a function is known as global scope and the code that exist inside a function is known as local scope or function scope
+// Variables created within the local scope cannot be read by code at the global scope level. They are accessible only to functions located within the local scope.  
+
+var globalScope = "This is the global scope"
+function localScope(){
+  return "This is the local scope"
+}
+//When writing FP(functional programming) code, we keep data and functionality separate and pass data into functions only when we want something computed.
+//In FP, functions must always have a return value which can be used elsewhere in the code
+function getDistance(mph, h){
+return mph * h
+}
+var mph = 60
+var h = 4
+var distance = getDistance(mph, h)
