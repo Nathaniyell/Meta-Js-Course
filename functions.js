@@ -17,13 +17,26 @@ addTwoNums(10, 20); //the values passed to the function when invoking it are cal
 //Function parameters are like variables and the actual values of these parameters are called arguments and are made available when the function is invoked
 
 //LetterFinder function
-function letterFinder(word, match){
-  for(var i = 0; i < word.length; i++){
-            if(word[i]==match){
-          console.log("found the", match, "at", i )
-      }else{
-          console.log('---No match found at', i)
-      }
+function letterFinder(word, match) {
+  for (var i = 0; i < word.length; i++) {
+    if (word[i] == match) {
+      console.log("found the", match, "at", i);
+    } else {
+      console.log("---No match found at", i);
+    }
   }
 }
-letterFinder("test", "t")
+letterFinder("test", "t");
+
+//Functional Programming
+//The purpose of this program is to perform currency conversions
+
+var currencyOne = 100;
+var currencyTwo = 0;
+var exchangeRate = 1.2;
+
+function convertCurrency(amount, rate){
+  return amount * rate
+}
+currencyTwo = convertCurrency(currencyOne, exchangeRate)
+console.log(currencyTwo);
