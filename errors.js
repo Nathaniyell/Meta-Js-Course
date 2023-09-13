@@ -32,3 +32,21 @@ try {
 }
 console.log("my program does not stop");
 //The benefit of using a try and catch block is that even if javascript experiences an error during execution, it will not stop executing other pieces of code
+
+//null represents the intentional absence of any object value
+
+//The undefined data type can only hold one value, undefined
+//the undefined word is displayed after a console.log message because the console.log is a function and unless a function has some return value, it will always display undefine after executing its job
+
+//Also the undefined word appears when a variable is defined without an assignment
+var noise; //returns undefined
+
+//Trying to access an object property that does not exist will return undefined
+
+var game ={
+  score: 40,
+}
+console.log(game.Score) //returns undefined
+
+//The empty value is a string with no characters between them
+var empty1 =""
