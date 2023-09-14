@@ -12,7 +12,7 @@ try {
 }
 console.log("This line runs");
 
-//including the "throw new Error" in the try and catch block can help to force an error to be thrown from the try block to the catch block
+//including the "throw new Error" in the try and catch block can help to force an error to be thrown from the try block to the catch block which then stops the execution of other parts of the code immediately.
 //The throw keyword can be used outside the try block but it will not be possible to catch the errors
 
 try {

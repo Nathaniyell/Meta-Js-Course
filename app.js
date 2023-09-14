@@ -29,12 +29,12 @@ const dataTypes = [
 //Text Values are known as the string data type while numerical value are known as the number data type
 //Null represents the absence of a value
 //Undefined represents a variable that has not yet been assigned a value
-//BigInt is a data type that can accomodate a greater range of numbers that the number data type
+//BigInt is a data type that can accomodate a greater range of numbers than the number data type
 //A symbol data type is used as unique identifier
 
 const operators = {
   assignment: "=",
-  //The assignment operator is right to left associative which implies that the value on the right gets assigned to the variable o the left of the assignment operator
+  //The assignment operator is right to left associative which implies that the value on the right gets assigned to the variable on the left of the assignment operator
   multiplication: "*",
   addition: "+",
   subtraction: "-",
