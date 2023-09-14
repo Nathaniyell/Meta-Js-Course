@@ -85,7 +85,43 @@ Another rule for a function to be considered pure is that it should not have sid
 This includes: 
 changing variable values outside of the function itself, or even relying on outside variables 
 calling a Browser API (even the console itself!) 
-calling Math.random() - since the value cannot be reliably repeated
+calling Math.random() - since the value cannot be reliably repeated*/
 
+// Parameters are essentially passed to functions by value — so if the code within the body of a function assigns a completely new value to a parameter that was passed to the function, the change is not reflected globally or in the code which called that function.
 
-*/
+// When you pass an object as a parameter, if the function changes the object's properties, that change is visible outside the function, as shown in the following example:
+function myFunc(theObject) {
+  theObject.make = "Toyota";
+}
+
+const mycar = {
+  make: "Honda",
+  model: "Accord",
+  year: 1998,
+};
+
+console.log(mycar.make); // "Honda"
+myFunc(mycar);
+console.log(mycar.make); // "Toyota"
+
+// When you pass an array as a parameter, if the function changes any of the array's values, that change is visible outside the function, as shown in the following example:
+function myFunc(theArr) {
+  theArr[0] = 30;
+}
+
+const arr = [45];
+
+console.log(arr[0]); // 45
+myFunc(arr);
+console.log(arr[0]); // 30
+
+//Function expression
+const myFunction = function(){
+
+}
+//function declaration
+function myFunction(){
+
+}
+//Function hoisting comes to play when a function is called before it is declared, essentially the JavaScript interpreter hoists the entire function declaration to the top of the current scope
+//Function hoisting only works with function declarations — not with function expressions. 

@@ -23,4 +23,5 @@ what makes let and const different from var?
 1. variables declared with let and const cannot be used before it is declared
 2. Variables cannot be redeclared
 3. Variables declared with let and const are scoped to the block even within if statements and loops
+4. Variables declared with const must be assigned during declaration.
 */
