@@ -32,15 +32,15 @@ letterFinder("test", "t");
 //Being able to return custom values is one of the foundations that makes functional programming possible.
 //The purpose of this program is to perform currency conversions
 
-var currencyOne = 100;
-var currencyTwo = 0;
+var firstCurrency = 100;
+var secondCurrency = 0;
 var exchangeRate = 1.2;
 
 function convertCurrency(amount, rate) {
   return amount * rate;
 }
-currencyTwo = convertCurrency(currencyOne, exchangeRate);
-console.log(currencyTwo);
+secondCurrency = convertCurrency(firstCurrency, exchangeRate);
+console.log(secondCurrency);
 
 //Recursive functions
 //Recursion is an alternative way to run repetitive code without the use of loops. When a function is called inside itself, it is known as recursion
