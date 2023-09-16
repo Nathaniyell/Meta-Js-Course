@@ -1,6 +1,6 @@
 //Scope is about accessibility of variables
 //The code that exist outside of a function is known as global scope and the code that exist inside a function is known as local scope or function scope
-// Variables created within the local scope cannot be read by code at the global scope level. They are accessible only to functions located within the local scope.  
+// Variables created within the local scope cannot be read by code at the global scope level. They are accessible only to functions located within the local scope.
 
 /*
 ES6 Block code
@@ -13,9 +13,9 @@ characteristics of variables declared with var:
 2. Same variable can be redeclared
 3. Can be scoped to a function, or globally
 */
-var globalScope = "This is the global scope"
-function localScope(){
-  return "This is the local scope"
+var globalScope = "This is the global scope";
+function localScope() {
+  return "This is the local scope";
 }
 
 /*

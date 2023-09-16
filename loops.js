@@ -56,22 +56,24 @@ for (var year = 2018; year < 2024; year++) {
 
 for (var firstNum = 0; firstNum < 3; firstNum++) {
   for (var secondNum = 0; secondNum < 10; secondNum++) {
-    console.log(firstNum + " times " + secondNum + " is equal to " + firstNum*secondNum);
+    console.log(
+      firstNum + " times " + secondNum + " is equal to " + firstNum * secondNum
+    );
   }
 }
-for(var i = 1; i<=10; i++){
-    switch(i){
-        case 1:
-        console.log("Gold Medal");
-        break;
-        case 2:
-        console.log("Silver Medal");
-        break;
-        case 3:
-        console.log("Bronze Medal");
-        break;
-        default:
-        console.log(i);
-        break
-    }
+for (var i = 1; i <= 10; i++) {
+  switch (i) {
+    case 1:
+      console.log("Gold Medal");
+      break;
+    case 2:
+      console.log("Silver Medal");
+      break;
+    case 3:
+      console.log("Bronze Medal");
+      break;
+    default:
+      console.log(i);
+      break;
+  }
 }

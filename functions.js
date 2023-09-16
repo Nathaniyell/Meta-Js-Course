@@ -52,15 +52,14 @@ function example() {
   example();
 }
 
-
 //When writing FP(functional programming) code, we keep data and functionality separate and pass data into functions only when we want something computed.
 //In FP, functions must always have a return value which can be used elsewhere in the code
-function getDistance(mph, h){
-return mph * h
+function getDistance(mph, h) {
+  return mph * h;
 }
-var mph = 60
-var h = 4
-var distance = getDistance(mph, h)
+var mph = 60;
+var h = 4;
+var distance = getDistance(mph, h);
 
 /* 
 A higher-order function is a function that has either one or both of the following characteristics:
@@ -74,9 +73,9 @@ function addTwoNums(getNumber1, getNumber2) {
 
 //A pure function returns the exact same result as long as it's given the same values.
 function addTwoNums(a, b) {
-  console.log(a + b)
+  console.log(a + b);
 }
-//This function will always return the same output, based on the input. For example, as long as we give it a specific value, say, 5, and 6: 
+//This function will always return the same output, based on the input. For example, as long as we give it a specific value, say, 5, and 6:
 addTwoNums(5, 6); //returns 11
 
 /*
@@ -116,12 +115,8 @@ myFunc(arr);
 console.log(arr[0]); // 30
 
 //Function expression
-const myFunction = function(){
-
-}
+const myFunction = function () {};
 //function declaration
-function myFunction(){
-
-}
+function myFunction() {}
 //Function hoisting comes to play when a function is called before it is declared, essentially the JavaScript interpreter hoists the entire function declaration to the top of the current scope
-//Function hoisting only works with function declarations — not with function expressions. 
+//Function hoisting only works with function declarations — not with function expressions.

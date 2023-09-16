@@ -236,25 +236,24 @@ ringTheBell(door);
 
 class Bird {
   useWings() {
-      console.log("Flying!")
+    console.log("Flying!");
   }
 }
 class Eagle extends Bird {
   useWings() {
-      super.useWings() //super keyword gives this method access to the methods of the parent class (Bird)
-      console.log("Barely flapping!")
+    super.useWings(); //super keyword gives this method access to the methods of the parent class (Bird)
+    console.log("Barely flapping!");
   }
 }
 class Penguin extends Bird {
   useWings() {
-      console.log("Diving!")
+    console.log("Diving!");
   }
 }
 var baldEagle = new Eagle();
 var kingPenguin = new Penguin();
 baldEagle.useWings(); // "Flying! Barely flapping!"
 kingPenguin.useWings(); // "Diving!"
-
 
 /*
 JavaScript has a number of built-in object types, such as:
@@ -268,9 +267,9 @@ For example, to create a new instance of the Date object, I can run: new Date().
 //Besides constructor functions for the built-in objects, you can also define custom constructor functions:
 function Icecream(flavor) {
   this.flavor = flavor;
-  this.meltIt = function() {
-      console.log(`The ${this.flavor} icecream has melted`);
-  }
+  this.meltIt = function () {
+    console.log(`The ${this.flavor} icecream has melted`);
+  };
 }
 
 let kiwiIcecream = new Icecream("kiwi");
