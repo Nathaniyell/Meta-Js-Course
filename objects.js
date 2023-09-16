@@ -173,6 +173,14 @@ It is a simple concept that works like this:
 -Each of them are separate classes, meaning, each of them are separate blueprints for specific object instances that can be constructed as needed.
 -To setup the inheritance relation between classes in JavaScript, you can use the extends keyword, as in class B extends A.
 */
- class Animal{}
- class Birds extends Animal{}
- class Eagle extends Birds{}
+ class Animal{/* ...class code here... */ }
+ class Birds extends Animal{/* ...class code here... */ }
+ class Eagle extends Birds{/* ...class code here... */ }
+
+
+ /*
+OOP Principles: Encapsulation
+In the simplest terms, encapsulation has to do with making a code implementation "hidden" from other users, in the sense that they don't have to know how your code works in order to "consume" the code.
+for example, when you run:
+"abc".toUpperCase(), you really dont have to worry or think about how the toUpperCase() method works. Even if the underlying syntaz - that is, the implementation of the toUpperCase() method changes - as long as it doesn't break your code, you dont have to worry about what it does in the background.
+ */
