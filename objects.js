@@ -95,9 +95,9 @@ var virtualPet = {
     this.sleepy = false;
   },
 };
-console.log(virtualPet.sleepy) // true
-virtualPet.nap() //this updates the value of the sleep property
-console.log(virtualPet.sleepy) // false
+console.log(virtualPet.sleepy); // true
+virtualPet.nap(); //this updates the value of the sleep property
+console.log(virtualPet.sleepy); // false
 
 //OOP
 /*
@@ -106,37 +106,37 @@ OOP revolves around the idea of organizing our programs using objects to group r
 
 //write a code that calculates the total cost of buying a pair of shoes
 
-let purchase1 ={
+let purchase1 = {
   shoes: 100,
   stateTax: 1.2,
-  totalPrice: function(){
-    let calculation = purchase1.shoes * purchase1.stateTax
-    console.log("Total Price: ", calculation)
-  }
-}
-purchase1.shoes // 100
-purchase1.totalPrice() // 120
+  totalPrice: function () {
+    let calculation = purchase1.shoes * purchase1.stateTax;
+    console.log("Total Price: ", calculation);
+  },
+};
+purchase1.shoes; // 100
+purchase1.totalPrice(); // 120
 
 //as opposed to
-let footwear = 100
-let stateTax = 1.2
+let footwear = 100;
+let stateTax = 1.2;
 
-function costOfShoe(price, tax){
-return price * tax
+function costOfShoe(price, tax) {
+  return price * tax;
 }
-let toPay = totalPrice(footwear, stateTax) // returns 120
+let toPay = totalPrice(footwear, stateTax); // returns 120
 console.log(toPay);
 
 //the "this" keyword essentially means this object. The advantage of the this keyword is that rather than having to think of the name of the object whose property you can just use the alias of the current object's name which is represented by the this keyword.
 //Bearing the above in mind, the previous solution can be rewritten as:
-let purchase2 ={
+let purchase2 = {
   shoes: 60,
   stateTax: 1.2,
-  totalPrice: function(){
-    let calculation = this.shoes * this.stateTax
-    console.log("Total Price: ", calculation)
-  }
-}
+  totalPrice: function () {
+    let calculation = this.shoes * this.stateTax;
+    console.log("Total Price: ", calculation);
+  },
+};
 /*One of the most efficient ways of building new objects is by using classes
 Classes are an essentially a blueprint of building new objects of a certain kind, repeatedly
 Classes are built using the class keyword followed by the name of the class starung with a capital letter and a pair of curly braces. Inside the curly braces you hace the constructor function whic accepts as many parameters needed.
@@ -144,22 +144,23 @@ The role of the constructor function is to assign the passed in parameters to th
 After the constructor is defined, you may add as many methods as you want. It is important to remember that you don't use the function keyword here
 
 */
-class Car{
-  constructor(color, speed){
-    this.color = color //this is the object property and values
-    this.speed = speed
+class Car {
+  constructor(color, speed) {
+    this.color = color; //this is the object property and values
+    this.speed = speed;
   }
-  ignitionIsOn(){ //This is the method
+  ignitionIsOn() {
+    //This is the method
     console.log("Ignition is on");
   }
 }
 //Once the class definition is ready, you can build the car object as shown:
 //-An instance of the class using the keyword new and that class' name, followed by opening and closing parentheses, and optional arguments, based on how the class itself is defined.
 //This is otherwise known as instantiating the car class and saving the instance of the class to various variable names
-const car1 = new Car("red", 120)
-const car2 = new Car("red", 100)
+const car1 = new Car("red", 120);
+const car2 = new Car("red", 100);
 
-car1.ignitionIsOn() // gives access to the  method stored on the car class
+car1.ignitionIsOn(); // gives access to the  method stored on the car class
 
 //The four fundamental OOP principles are inheritance, encapsulation, abstraction and polymorphism.
 
@@ -173,18 +174,23 @@ It is a simple concept that works like this:
 -Each of them are separate classes, meaning, each of them are separate blueprints for specific object instances that can be constructed as needed.
 -To setup the inheritance relation between classes in JavaScript, you can use the extends keyword, as in class B extends A.
 */
- class Animal{/* ...class code here... */ }
- class Birds extends Animal{/* ...class code here... */ }
- class Eagle extends Birds{/* ...class code here... */ }
+class Animal {
+  /* ...class code here... */
+}
+class Birds extends Animal {
+  /* ...class code here... */
+}
+class Eagle extends Birds {
+  /* ...class code here... */
+}
 
-
- /*
+/*
 OOP Principles: Encapsulation
 In the simplest terms, encapsulation has to do with making a code implementation "hidden" from other users, in the sense that they don't have to know how your code works in order to "consume" the code.
 for example, when you run:
 "abc".toUpperCase(), you really dont have to worry or think about how the toUpperCase() method works. Even if the underlying syntaz - that is, the implementation of the toUpperCase() method changes - as long as it doesn't break your code, you dont have to worry about what it does in the background.
  */
- /*
+/*
 OOP Principle: Abstraction
 Abstraction is all about writing code in a way that will make it more generalized.
 The concepts of encapsulation and abstraction are often misunderstood because their differences can feel blurry.
@@ -199,20 +205,52 @@ This concept simply translates to multiple forms. So, to understand what polymor
 -Now consider a bell on a bicycle. A bicycle has a bell. It could be said that the bell is a property of the bicycle object. This bell could also be rung. However, the reason, the intention, and the result of somebody ringing the bell on a bicycle is not the same as ringing the bell on a door.
 */
 
-const bicycle ={
+const bicycle = {
   color: "red",
-  bell: ()=>{return "Ring, ring! Watch out, please!"}
-}
-const door ={
-  bell: ()=>{return "Ring, ring! You have a visitor!"}
-}
-bicycle.bell()
-door.bell()
+  bell: () => {
+    return "Ring, ring! Watch out, please!";
+  },
+};
+const door = {
+  bell: () => {
+    return "Ring, ring! You have a visitor!";
+  },
+};
+bicycle.bell();
+door.bell();
 //From the above, one can conclude that the exact same name of method can have the exact opposite intent based on what object it is used for
 //To make the code truly polymorphic, you can add the function declaration which accepts a parameter that is expected to be an abject in other to execute the different responses on the method based on which thing is passed as the parameter:
 
-function ringTheBell(thing){
-  console(thing.bell())
+function ringTheBell(thing) {
+  console(thing.bell());
 }
-ringTheBell(bicycle) 
-ringTheBell(door)
+ringTheBell(bicycle);
+ringTheBell(door);
+
+//Another example is the concatenation method which can give different output based on what it is used on. Thus it is said to exhibit a polymorphic behaviour since it behaves differently based on the context.
+"abc"
+  .concat("def") //returns "abcdef"
+  ["abc"].concat(["def"]); //returns ["abc", "def"]
+
+//Polymorphism is useful because it allows developers to build objects that can have the exact same functionality, namely, functions with the exact same name, which behave exactly the same.
+
+class Bird {
+  useWings() {
+      console.log("Flying!")
+  }
+}
+class Eagle extends Bird {
+  useWings() {
+      super.useWings() //super keyword gives this method access to the methods of the parent class (Bird)
+      console.log("Barely flapping!")
+  }
+}
+class Penguin extends Bird {
+  useWings() {
+      console.log("Diving!")
+  }
+}
+var baldEagle = new Eagle();
+var kingPenguin = new Penguin();
+baldEagle.useWings(); // "Flying! Barely flapping!"
+kingPenguin.useWings(); // "Diving!"
