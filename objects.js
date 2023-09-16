@@ -100,3 +100,8 @@ var virtualPet = {
 console.log(virtualPet.sleepy) // true
 virtualPet.nap() //this updates the value of the sleep property
 console.log(virtualPet.sleepy) // false
+
+//OOP
+/*
+OOP revolves around the idea of organizing our programs using objects to group related data and functionality in contrast to the FP approach where the data used needs to be kept separate from the functions that operate on the data
+*/
