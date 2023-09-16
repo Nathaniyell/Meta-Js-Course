@@ -194,6 +194,18 @@ It helps to think of it in the following terms:
  */
 
 /*POlymorphism
-
+This concept simply translates to multiple forms. So, to understand what polymorphism is about, let's consider some real-life objects:
+-A door has a bell. It could be said that the bell is a property of the door object. This bell can be rung. When would someone ring a bell on the door? Obviously, to get someone to show up at the door.
+-Now consider a bell on a bicycle. A bicycle has a bell. It could be said that the bell is a property of the bicycle object. This bell could also be rung. However, the reason, the intention, and the result of somebody ringing the bell on a bicycle is not the same as ringing the bell on a door.
 */
 
+const bicycle ={
+  color: "red",
+  bell: ()=>{return "Ring, ring! Watch out, please!"}
+}
+const door ={
+  bell: ()=>{return "Ring, ring! You have a visitor!"}
+}
+bicycle.bell()
+door.bell()
+//From the above, one can conclude that the exact same name of method can have the exact opposite intent based on what object it is used for
