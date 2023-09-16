@@ -83,8 +83,6 @@ typeof car;
 
 /*OOP
 In OOP, data and functionality are grouped as properties and methods inside objects.
-
-
 */
 var virtualPet = {
   sleepy: true, //data
@@ -146,7 +144,6 @@ The role of the constructor function is to assign the passed in parameters to th
 After the constructor is defined, you may add as many methods as you want. It is important to remember that you don't use the function keyword here
 
 */
-
 class Car{
   constructor(color, speed){
     this.color = color //this is the object property and values
@@ -163,3 +160,19 @@ const car1 = new Car("red", 120)
 const car2 = new Car("red", 100)
 
 car1.ignitionIsOn() // gives access to the  method stored on the car class
+
+//The four fundamental OOP principles are inheritance, encapsulation, abstraction and polymorphism.
+
+/*Inheritance
+Inheritance is one of the foundations of object-oriented programming.
+It is a simple concept that works like this:
+-There is a base class of "Animal".
+-There is another class, a sub-class inheriting from "Animal", and the name of this class is "Bird".
+-Next, there is another class, inheriting from "Bird", and this class is "Eagle".
+-Each sub-class inherits from its super-class. In turn, a sub-class might also be a super-class, if there are classes inheriting from that sub-class
+-Each of them are separate classes, meaning, each of them are separate blueprints for specific object instances that can be constructed as needed.
+-To setup the inheritance relation between classes in JavaScript, you can use the extends keyword, as in class B extends A.
+*/
+ class Animal{}
+ class Birds extends Animal{}
+ class Eagle extends Birds{}
