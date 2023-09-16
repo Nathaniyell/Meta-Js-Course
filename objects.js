@@ -157,6 +157,9 @@ class Car{
   }
 }
 //Once the class definition is ready, you can build the car object as shown:
+//-An instance of the class using the keyword new and that class' name, followed by opening and closing parentheses, and optional arguments, based on how the class itself is defined.
 //This is otherwise known as instantiating the car class and saving the instance of the class to various variable names
 const car1 = new Car("red", 120)
 const car2 = new Car("red", 100)
+
+car1.ignitionIsOn() // gives access to the  method stored on the car class
