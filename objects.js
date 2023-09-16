@@ -143,7 +143,7 @@ let purchase2 ={
 Classes are an essentially a blueprint of building new objects of a certain kind, repeatedly
 Classes are built using the class keyword followed by the name of the class starung with a capital letter and a pair of curly braces. Inside the curly braces you hace the constructor function whic accepts as many parameters needed.
 The role of the constructor function is to assign the passed in parameters to the future object properties. It is the constructor function that is used when instantiating new objects.
-After the constructor is defined, you may add as manyh methods as you want. It is important to remember that you don't use the function keyword here
+After the constructor is defined, you may add as many methods as you want. It is important to remember that you don't use the function keyword here
 
 */
 
@@ -156,3 +156,7 @@ class Car{
     console.log("Ignition is on");
   }
 }
+//Once the class definition is ready, you can build the car object as shown:
+//This is otherwise known as instantiating the car class and saving the instance of the class to various variable names
+const car1 = new Car("red", 120)
+const car2 = new Car("red", 100)
