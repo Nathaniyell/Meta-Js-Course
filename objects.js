@@ -184,3 +184,12 @@ In the simplest terms, encapsulation has to do with making a code implementation
 for example, when you run:
 "abc".toUpperCase(), you really dont have to worry or think about how the toUpperCase() method works. Even if the underlying syntaz - that is, the implementation of the toUpperCase() method changes - as long as it doesn't break your code, you dont have to worry about what it does in the background.
  */
+ /*
+OOP Principle: Abstraction
+Abstraction is all about writing code in a way that will make it more generalized.
+The concepts of encapsulation and abstraction are often misunderstood because their differences can feel blurry.
+It helps to think of it in the following terms: 
+-An abstraction is about extracting the concept of what you're trying to do, rather than dealing with a specific manifestation of that concept. 
+-Encapsulation is about you not having access to, or not being concerned with, how some implementation works internally
+ */
+
