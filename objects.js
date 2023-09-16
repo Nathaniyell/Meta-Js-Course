@@ -105,3 +105,23 @@ console.log(virtualPet.sleepy) // false
 /*
 OOP revolves around the idea of organizing our programs using objects to group related data and functionality in contrast to the FP approach where the data used needs to be kept separate from the functions that operate on the data
 */
+
+//write a code that calculates the total cost of buying a pair of shoes
+
+let purchase1 ={
+  shoes: 100,
+  stateTax: 1.2,
+  totalPrice: function(){
+    let calculation = purchase1.shoes * purchase1.stateTax
+    console.log("Total Price: ", calculation)
+  }
+}
+
+//as opposed to
+let footwear = 100
+let stateTax = 1.2
+
+function costOfShoe(price, tax){
+let totalAmt = price * tax
+return console.log("Total Price: ", totalAmt)
+}
