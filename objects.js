@@ -193,3 +193,7 @@ It helps to think of it in the following terms:
 -Encapsulation is about you not having access to, or not being concerned with, how some implementation works internally
  */
 
+/*POlymorphism
+
+*/
+
