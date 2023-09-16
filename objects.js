@@ -116,6 +116,8 @@ let purchase1 ={
     console.log("Total Price: ", calculation)
   }
 }
+purchase1.shoes // 100
+purchase1.totalPrice() // 120
 
 //as opposed to
 let footwear = 100
@@ -124,4 +126,15 @@ let stateTax = 1.2
 function costOfShoe(price, tax){
 let totalAmt = price * tax
 return console.log("Total Price: ", totalAmt)
+}
+
+//the "this" keyword essentially means this object. The advantage of the this keyword is that rather than having to think of the name of the object whose property you can just use the alias of the current object's name which is represented by the this keyword.
+//Bearing the above in mind, the previous solution can be rewritten as:
+let purchase2 ={
+  shoes: 60,
+  stateTax: 1.2,
+  totalPrice: function(){
+    let calculation = this.shoes * this.stateTax
+    console.log("Total Price: ", calculation)
+  }
 }
