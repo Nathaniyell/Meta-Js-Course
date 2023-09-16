@@ -209,3 +209,10 @@ const door ={
 bicycle.bell()
 door.bell()
 //From the above, one can conclude that the exact same name of method can have the exact opposite intent based on what object it is used for
+//To make the code truly polymorphic, you can add the function declaration which accepts a parameter that is expected to be an abject in other to execute the different responses on the method based on which thing is passed as the parameter:
+
+function ringTheBell(thing){
+  console(thing.bell())
+}
+ringTheBell(bicycle) 
+ringTheBell(door)
