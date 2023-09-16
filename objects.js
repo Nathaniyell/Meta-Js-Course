@@ -254,3 +254,26 @@ var baldEagle = new Eagle();
 var kingPenguin = new Penguin();
 baldEagle.useWings(); // "Flying! Barely flapping!"
 kingPenguin.useWings(); // "Diving!"
+
+
+/*
+JavaScript has a number of built-in object types, such as:
+ Math, Date, Object, Function, Boolean, Symbol, Array, Map, Set, Promise, JSON, etc. These objects are sometimes referred to as "native objects".
+
+Constructor functions, commonly referred to as just "constructors", are special functions that allow us to build instances of these built-in native objects. All the constructors are capitalized.
+To use a constructor function, you must prepend it with the operator new.
+For example, to create a new instance of the Date object, I can run: new Date(). What you get back is the current datetime, such as: Sun Sept 17 2023 00:30:08 GMT+0100 (Central European Standard Time) 
+*/
+
+//Besides constructor functions for the built-in objects, you can also define custom constructor functions:
+function Icecream(flavor) {
+  this.flavor = flavor;
+  this.meltIt = function() {
+      console.log(`The ${this.flavor} icecream has melted`);
+  }
+}
+
+let kiwiIcecream = new Icecream("kiwi");
+let appleIcecream = new Icecream("apple");
+kiwiIcecream; // --> Icecream {flavor: 'kiwi', meltIt: ƒ}
+appleIcecream; // --> Icecream {flavor: 'apple', meltIt: ƒ}
