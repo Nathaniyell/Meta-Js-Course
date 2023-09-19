@@ -308,12 +308,15 @@ class Train {
       ? console.log("lights are on, you can begin your voyage")
       : console.log("Please turn on the lights before you move the train");
   }
-  getSelf() {
+  getSelf() { //The getSelf() method prints out the properties on the object instance it is called on.
     console.log(this);
   }
   getPrototype() {
     let proto = Object.getPrototypeOf(this);
     console.log(proto);
+    //The getPrototype() console logs the prototype of the object instance of the Train class. The prototype holds all the properties shared by all the object instances of the Train class. To get the prototype, you'll be using JavaScript's built-in Object.getPrototypeOf() method, and passing it this object - meaning, the object instance inside of which this method is invoked.
   }
 }
 let myFirstTrain = new Train("red", false);
+myFirstTrain.toggleLightsOn() //changes the value from false to true
+myFirstTrain.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, getSelf: f, getPrototype: f}
