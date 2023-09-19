@@ -308,7 +308,8 @@ class Train {
       ? console.log("lights are on, you can begin your voyage")
       : console.log("Please turn on the lights before you move the train");
   }
-  getSelf() { //The getSelf() method prints out the properties on the object instance it is called on.
+  getSelf() {
+    //The getSelf() method prints out the properties on the object instance it is called on.
     console.log(this);
   }
   getPrototype() {
@@ -318,5 +319,25 @@ class Train {
   }
 }
 let myFirstTrain = new Train("red", false);
-myFirstTrain.toggleLightsOn() //changes the value from false to true
+myFirstTrain.toggleLightsOn(); //changes the value from false to true
 myFirstTrain.getPrototype(); // {constructor: f, toggleLights: f, ligthsStatus: f, getSelf: f, getPrototype: f}
+
+//Polymorphism and inheritance together
+class HighSpeedTrain extends Train {
+  constructor(passengers, highSpeedOn, colour, lightsOn) {
+    super(colour, lightsOn); //gives access to the properties of the parent class
+    this.passengers = passengers;
+    this.highSpeedOn = highSpeedOn;
+  }
+  toggleHighSpeed() {
+    this.highSpeedOn = !this.highSpeedOn;
+    console.log('High speed status:', this.highSpeedOn);
+}
+toggleLights() {
+    super.toggleLigths();
+    super.lightsStatus();
+    console.log('Lights are 100% operational.');
+}
+}
+//In JavaScript classes, super is used to specify what property gets inherited from the super-class in the sub-class.
+//The HighSpeedTrain class automatically inherits all the methods that exist on the Train prototype, namely, the toggleLights(), lightsStatus(), getSelf(), and getPrototype() methods.
