@@ -139,7 +139,7 @@ let purchase2 = {
 };
 /*One of the most efficient ways of building new objects is by using classes
 Classes are an essentially a blueprint of building new objects of a certain kind, repeatedly
-Classes are built using the class keyword followed by the name of the class starung with a capital letter and a pair of curly braces. Inside the curly braces you hace the constructor function whic accepts as many parameters needed.
+Classes are built using the class keyword followed by the name of the class starung with a capital letter and a pair of curly braces. Inside the curly braces you have the constructor function which accepts as many parameters needed.
 The role of the constructor function is to assign the passed in parameters to the future object properties. It is the constructor function that is used when instantiating new objects.
 After the constructor is defined, you may add as many methods as you want. It is important to remember that you don't use the function keyword here
 
@@ -279,13 +279,41 @@ appleIcecream; // --> Icecream {flavor: 'apple', meltIt: ƒ}
 
 //prototype is an object that can hold properties to be shared by multiple of other objects
 //Javascript starts from the object itself when looking for properties to work with, then if it can't find it on the object, it looks up to its prototype.
+//All objects that are built from the prototype share the same functionality
 
-let bird={
+let bird = {
   hasWings: true,
   canFly: true,
-  hasFeathers: true
-} //this is the prototype from which other objects can be created from as shown:
+  hasFeathers: true,
+}; //this is the prototype from which other objects can be created from as shown:
 
-let eagle1 = Object.create(bird)
-console.log(eagle1) //returns eagle1={}
-console.log(eagle1.hasWings) // returns true because of the prototype it was created from
+let eagle1 = Object.create(bird);
+console.log(eagle1); //returns eagle1={}
+console.log(eagle1.hasWings); // returns true because of the prototype it was created from
+
+eagle1.canFly = false; //sets a new property on the eagle1 object and also  does not update the property of the prototype it was created from
+console.log(eagle1.canFly); //returns false
+
+class Train {
+  constructor(colour, lightsOn) {
+    this.colour = colour;
+    this.lightsOn = lightsOn;
+  }
+  toggleLightsOn() {
+    this.lightsOn = !this.lightsOn;
+  }
+  lightsStatus() {
+    console.log("Lights on? ", this.lightsOn);
+    this.lightsOn
+      ? console.log("lights are on, you can begin your voyage")
+      : console.log("Please turn on the lights before you move the train");
+  }
+  getSelf() {
+    console.log(this);
+  }
+  getPrototype() {
+    let proto = Object.getPrototypeOf(this);
+    console.log(proto);
+  }
+}
+let myFirstTrain = new Train("red", false);
