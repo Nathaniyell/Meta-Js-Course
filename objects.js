@@ -276,3 +276,16 @@ let kiwiIcecream = new Icecream("kiwi");
 let appleIcecream = new Icecream("apple");
 kiwiIcecream; // --> Icecream {flavor: 'kiwi', meltIt: ƒ}
 appleIcecream; // --> Icecream {flavor: 'apple', meltIt: ƒ}
+
+//prototype is an object that can hold properties to be shared by multiple of other objects
+//Javascript starts from the object itself when looking for properties to work with, then if it can't find it on the object, it looks up to its prototype.
+
+let bird={
+  hasWings: true,
+  canFly: true,
+  hasFeathers: true
+} //this is the prototype from which other objects can be created from as shown:
+
+let eagle1 = Object.create(bird)
+console.log(eagle1) //returns eagle1={}
+console.log(eagle1.hasWings) // returns true because of the prototype it was created from
