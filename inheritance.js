@@ -11,4 +11,11 @@ class Animal {
             this.sleep();
         }
     }
+    sleep() {
+        this.energy += 20;
+        console.log('Energy is increasing, currently at:', this.energy)
+    }
+    getColor() {
+        console.log(this.color)
+    }
 }
