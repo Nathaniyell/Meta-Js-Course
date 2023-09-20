@@ -81,3 +81,5 @@ class Parrot extends Bird {
     }
 }
 
+var fiji = new Parrot(false); // we're passing `false` to the constructor so that fiji can't talk
+var polly = new Parrot(true); // we're passing `true` to the constructor so that polly can talk
