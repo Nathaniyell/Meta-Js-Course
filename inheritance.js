@@ -3,4 +3,12 @@ class Animal {
         this.color = color;
         this.energy = energy;
     }
+    isActive() {
+        if(this.energy > 0) {
+            this.energy -= 20;
+            console.log('Energy is decreasing, currently at:', this.energy)
+        } else if(this.energy == 0){
+            this.sleep();
+        }
+    }
 }
