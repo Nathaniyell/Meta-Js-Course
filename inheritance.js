@@ -116,3 +116,9 @@ polly.isActive(); // Energy is decreasing, currently at: 80
 
 var penguin = new Bird("shriek", false, "black and white", 200); // setting all the custom properties
 penguin; // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
+
+penguin.sound; // 'shriek'
+penguin.canFly; // false
+penguin.color; // 'black and white'
+penguin.energy; // 200
+penguin.isActive(); // Energy is decreasing, currently at: 180
