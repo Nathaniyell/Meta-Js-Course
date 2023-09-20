@@ -239,9 +239,10 @@ class Bird {
     console.log("Flying!");
   }
 }
-class Eagle extends Bird {
+class Eagle extends Bird { //the extends keyword is used to setup inheritance relationships.
   useWings() {
     super.useWings(); //super keyword gives this method access to the methods of the parent class (Bird)
+    //The super keyword allows you to "borrow" functionality from a super-class, in a sub-class
     console.log("Barely flapping!");
   }
 }
