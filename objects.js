@@ -334,10 +334,11 @@ class HighSpeedTrain extends Train {
     console.log('High speed status:', this.highSpeedOn);
 }
 toggleLights() {
-    super.toggleLigths();
+    super.toggleLights(); //this inherits the entire super-class' method
     super.lightsStatus();
     console.log('Lights are 100% operational.');
 }
 }
+let highSpeedTrain1 = new HighSpeedTrain(200, false, 'blue', false)
 //In JavaScript classes, super is used to specify what property gets inherited from the super-class in the sub-class.
 //The HighSpeedTrain class automatically inherits all the methods that exist on the Train prototype, namely, the toggleLights(), lightsStatus(), getSelf(), and getPrototype() methods.
