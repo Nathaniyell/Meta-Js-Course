@@ -122,3 +122,14 @@ penguin.canFly; // false
 penguin.color; // 'black and white'
 penguin.energy; // 200
 penguin.isActive(); // Energy is decreasing, currently at: 180
+
+var leo = new HouseCat();
+
+// leo, no purring please:
+leo.makeSound(false); // meow
+// leo, both purr and meow now:
+leo.makeSound(true); // purr, meow
+
+var cuddles = new Tiger();
+cuddles.makeSound(false); // Roar!
+cuddles.makeSound(true); // purr, Roar!
