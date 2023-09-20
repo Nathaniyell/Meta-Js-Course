@@ -89,3 +89,9 @@ function letterFinder(word, match) {
 }
 letterFinder(1, 2);
 letterFinder("cat", "c");
+
+//Default params allows yoy to build a function that will run with default argument values even if you don't pass it any arguments while still being flexible enough to allow you to pass custom argument values and deal with them accordingly.
+
+function withDefaultParams(number = 10) {
+  console.log('Result:', number * number)
+}
