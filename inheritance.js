@@ -113,3 +113,6 @@ polly.color; // yellow
 polly.energy; // 100
 
 polly.isActive(); // Energy is decreasing, currently at: 80
+
+var penguin = new Bird("shriek", false, "black and white", 200); // setting all the custom properties
+penguin; // Bird {color: 'black and white', energy: 200, sound: 'shriek', canFly: false }
