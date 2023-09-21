@@ -1,0 +1,1 @@
+//Destructuring is like copying an item which then becomes independent of the original
