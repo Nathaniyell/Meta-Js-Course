@@ -57,3 +57,8 @@ for( key of Object.keys(clothingItem) ) {
 }
 
 //The for of loop only iterates over the object's own properties and does not count the prototype at all. While the for in loop iterates over the properties and not the prototype
+
+//Template literals
+let greet = "Hello";
+let place = "World";
+console.log(`${greet} ${place} !`) //display both variables using template literals
