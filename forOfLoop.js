@@ -29,3 +29,19 @@ const car3 = {
     color: "yellow"
 }
 console.log(Object.values(car3)); // [300, 'yellow']
+
+//The Object.entries() returns an array listing both the keys and the values.  
+const car4 = {
+    speed: 400,
+    color: 'magenta'
+}
+console.log(Object.entries(car4)); //[ ['speed', 400], ['color', 'magenta'] ]
+//The values that get returned are 2-member arrays nested inside an array. In other words, you get an array of arrays, where each array item has two members, the first being a property's key, and the second being a property's value.
+
+// Effectively, it's as if you was listing all of a given object's properties, a bit like this: 
+// [
+//     [propertyKey, propertyVal],
+//     [propertyKey, propertyVal],
+//     ...etc
+// ]
+
