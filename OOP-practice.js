@@ -53,4 +53,5 @@ console.log("Doors:", this.noOfDoors)
 }
 const vehicle = new Vehicle('benz', 'GLK-350', 2019)
 console.log(vehicle.displayDetails())
-
+ const car = new Car('Honda', "F-1250", 2020, 4)
+ console.log(car.displayDetails());
