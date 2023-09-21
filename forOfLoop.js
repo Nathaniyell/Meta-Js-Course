@@ -22,3 +22,10 @@ const car2 = {
     color: "red"
 }
 console.log(Object.keys(car2)); // ['speed','color']
+
+//Object.values() returns an array of values contained in the object
+const car3 = {
+    speed: 300,
+    color: "yellow"
+}
+console.log(Object.values(car3)); // [300, 'yellow']
