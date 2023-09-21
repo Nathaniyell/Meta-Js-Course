@@ -55,3 +55,5 @@ var clothingItem = {
 for( key of Object.keys(clothingItem) ) {
     console.log(keys, ":", clothingItem[key])
 }
+
+//The for of loop only iterates over the object's own properties and does not count the prototype at all. While the for in loop iterates over the properties and not the prototype
