@@ -44,3 +44,19 @@ function addTaxToPrices(taxRate, ...itemsBought) {
 }
 let shoppingCart = addTaxToPrices(1.1, 46,89,35,78)
 console.log(shoppingCart); //[50.6, 97.9, 38.5, 85.8]
+
+//Examples using the spread and rest operator
+const fruits = ['apple', 'pear', 'plum']
+const berries = ['blueberry', 'strawberry']
+const fruitsAndBerries = [...fruits, ...berries] // concatenate
+console.log(fruitsAndBerries); // outputs a single array
+
+const flying = { wings: 2 }
+const car = { wheels: 4 }
+const flyingCar = {...flying, ...car}
+console.log(flyingCar) // {wings: 2, wheels: 4}
+
+//convert a string into an array
+const greeting = "Hello";
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars); //  ['H', 'e', 'l', 'l', 'o']
