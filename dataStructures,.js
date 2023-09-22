@@ -51,3 +51,9 @@ bestBoxer.set(3, "The third place");
 console.log(bestBoxer); //Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
 //to get a specific value, you use the get method, example:
 bestBoxer.get(1); // "The Champion"
+
+//A set is a collection of unique values. The Set constructor can accept an array. This means that you can quickly filter an array for unique members
+
+const repetitiveFruits = ['apple','pear','apple','pear','plum', 'apple'];
+const uniqueFruits = new Set(repetitiveFruits);
+console.log(uniqueFruits) // {'apple', 'pear', 'plum'}
