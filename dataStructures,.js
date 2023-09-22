@@ -35,9 +35,19 @@ nums.filter(function (num) {
   return num > 20;
 });
 
-//Map method is used to map over each array item, based on what work it performed inside the function that is passed-in to the map as a parameter.
+//map method is used to map over each array item, based on what work it performed inside the function that is passed-in to the map as a parameter.
 //It is important to note that the map method returns a new array of values
 
 nums.map((num) => {
   return num / 10;
 });
+
+//A Map constructor can feel very similar to an object in JS but it doesn't have inheritance and prototypes, making it useful for data storage. Example:
+
+let bestBoxer = new Map()
+bestBoxer.set(1, "The Champion");
+bestBoxer.set(2, "The Runner-up");
+bestBoxer.set(3, "The third place");
+console.log(bestBoxer); //Map(3) {1 => 'The Champion', 2 => 'The Runner-up', 3 => 'The third place'}
+//to get a specific value, you use the get method, example:
+bestBoxer.get(1); // "The Champion"
