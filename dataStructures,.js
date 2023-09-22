@@ -22,3 +22,10 @@ for (i = 0; i < grades.length; i++) {
   gradesSum += grades[i];
 }
 console.log(gradesSum / grades.length); //returns 85
+
+//Array methods: forEach, map and filter
+// The forEach() method accepts a function that will work on each array item. That function's first parameter is the current array item itself, and the second (optional) parameter is the index.
+const veggies = ['onion', 'garlic', 'potato'];
+veggies.forEach((veggie, index)=>{
+  console.log(`${index} . ${veggie}`)
+})
