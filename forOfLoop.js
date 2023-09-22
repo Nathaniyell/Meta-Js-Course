@@ -62,3 +62,15 @@ for( key of Object.keys(clothingItem) ) {
 let greet = "Hello";
 let place = "World";
 console.log(`${greet} ${place} !`) //display both variables using template literals
+//The above code returns: Hello World !
+//Using ES5 methods, you can only create strings using single or double quotations and using this method does not support the use of multi-line strings. In ES6, it is possible using the following syntax:
+var multiLineString=`
+This
+is 
+a
+multiline
+string
+made possible
+with bac-ticks in
+ES6
+`
