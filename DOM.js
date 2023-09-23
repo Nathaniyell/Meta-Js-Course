@@ -25,6 +25,11 @@ document.body.innerText = '';
 document.body.appendChild(h1);
 document.body.appendChild(input);
 
+input.addEventListener('change', ()=>{
+    console.log(input.value); //returns the value typed into the input field
+    h1.innerText = input.value
+})
+
 document.querySelector("p"); //selects a paragraph element and can have values like tagNames, id values("#my-id"), classNames(".myClass"), etc
 document.querySelectorAll("a"); //retuns all the element that match a specified value; say all the anchor tags on the webpage or all the headings etc
 
