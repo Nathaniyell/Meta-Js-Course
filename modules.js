@@ -1,0 +1,2 @@
+//JavaScript modules are standalone units of code that you can reuse again and again. Being standalone means that you can add them to your program, remove them and replace them with other modules and everything will still work
+//To use module, you have to change the type attribute of the script tag to module after which you specify the name of the module in the src attribute before it can be imported and made to work on your browser.
