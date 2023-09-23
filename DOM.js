@@ -14,38 +14,57 @@ h2.setAttribute("id", "sub-heading");
 //the setAttribute method takes two parameters, the first one being the attribute's name(class, id etc), and the second one is the value of the attribute
 h2.setAttribute("class", "secondary"); //sets a class attribute with a value of secondary
 
-document.body.appendChild(h2) // the append method attaches the h2 element that was created earlier to the body of the html file thereby making the contents visible to the user
-let h1 = document.createElement('h1')
-h1.innerText = "Type into the input to make this text change"
+document.body.appendChild(h2); // the append method attaches the h2 element that was created earlier to the body of the html file thereby making the contents visible to the user
+let h1 = document.createElement("h1");
+h1.innerText = "Type into the input to make this text change";
 
-let input = document.createElement('input')
-input.setAttribute('type', 'text')
+let input = document.createElement("input");
+input.setAttribute("type", "text");
 
-document.body.innerText = '';
+document.body.innerText = "";
 document.body.appendChild(h1);
 document.body.appendChild(input);
 
-input.addEventListener('change', ()=>{
-    console.log(input.value); //returns the value typed into the input field
-    h1.innerText = input.value
-})
+input.addEventListener("change", () => {
+  console.log(input.value); //returns the value typed into the input field
+  h1.innerText = input.value;
+});
 
 document.querySelector("p"); //selects a paragraph element and can have values like tagNames, id values("#my-id"), classNames(".myClass"), etc
 document.querySelectorAll("a"); //retuns all the element that match a specified value; say all the anchor tags on the webpage or all the headings etc
 
-document.getElementById('sub-heading'); //Returns all the objects on the DOM that matches a specified id attribute
-document.getElementsByClassName('secondary'); //Returns all the objects on the DOM that matches a specified id attribute
+document.getElementById("sub-heading"); //Returns all the objects on the DOM that matches a specified id attribute
+document.getElementsByClassName("secondary"); //Returns all the objects on the DOM that matches a specified id attribute
 //Element is singular for id and plural for className; getElementById and getElementsByClassName
 
 //Events in JS
 //In JS, the function that handles captured events is known as the event handler
 
-const target = document.querySelector('body')
-function handleClick(){
-    console.log("Clicked the body")
-
+const target = document.querySelector("body");
+function handleClick() {
+  console.log("Clicked the body");
 }
-target.addEventListener('click', handleClick)
+target.addEventListener("click", handleClick);
 //The addEventListener method takes in two values, the event to listen for and also the function to be run once the event is fired. The function can be an anonymous, named or an arrow function.
 
 //The event listeners can also be attached to the html tags using the HTML events attributes. This is done by adding the onclick attribute to the html tag you want to add the eventlistener to and also attaching the function you want to be ran in quotes as the value of the onclick attribute: <h2 onclick="handleClick()">This is a subheading</h2>
+
+let h1 = document.querySelector("h1");
+let arr = ["Example Domain", "First Click", "Second Click", "Third Click"];
+const handleClicks = () => {
+  // let h1.innerText = ""
+  switch (h1.innerText) {
+    case arr[0]:
+      h1.innerText = arr[1];
+      break;
+    case arr[1]:
+      h1.innerText = arr[2];
+      break;
+    case arr[2]:
+      h1.innerText = arr[3];
+      break;
+    default:
+      h1.innerText = arr[0];
+  }
+};
+h1.addEventListener("click", handleClicks);
