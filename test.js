@@ -47,4 +47,8 @@ module.exports = addFive; //The "module.exports" exports this function so that i
 4.Create a separate test file to be used to write all tests.
 5. npm run test - which runs the test comman on all the specified function which was exported and receiveed by the test file
 */
-//Test Driven Development(TDD) is a streamlined process of writing code that will satisfy some requirements - This typically involves writing a failing test for a javascript file and then writing code to make it pass 
+//Test Driven Development(TDD) is a streamlined process of writing code that will satisfy some requirements - This typically involves writing a failing test for a javascript file and then writing code to make it pass. Example:
+test("returns true if statusOfKeys exists", ()=>{
+    expect(statusofKeys).toBeDefined()
+})
+//The above test will fail because the statusOfKeys function has not been declared
