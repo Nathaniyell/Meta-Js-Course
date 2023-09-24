@@ -2,12 +2,12 @@
 function concatStrings(strA, strB) {
   return strA + strB;
 }
-concatStrings("abc", "def") // returns "abcdef"
+concatStrings("abc", "def"); // returns "abcdef"
 
-concatStrings(1,2) // returns 3 which is the wrong response for the function since it was numbers that was passed in
+concatStrings(1, 2); // returns 3 which is the wrong response for the function since it was numbers that was passed in
 
 //using a testing framework like jest, you can write tests for the above function to ensure that the function only runs when strings are passed in as arguments
-expect(concatStrings("abc", "def")).toBe("abcdef") //this is essentially stating that you expect the calling of the function to give an output of the value specified in the toBe method
+expect(concatStrings("abc", "def")).toBe("abcdef"); //this is essentially stating that you expect the calling of the function to give an output of the value specified in the toBe method
 //Testing helps you verify that the function is behaving in the way you intended.
 //Testing code ensures: conciseness,clarity and repeatability
 //You can run these tests each time you want to instantiate a function
@@ -32,4 +32,18 @@ expect(concatStrings("abc", "def")).toBe("abcdef") //this is essentially stating
 //Mocking allows you to separate the code that you are testing from its related dependencies i.e you can use mocking features to ensure that your unit testing is stand-alone.
 //Mocks, allow you to pretend that the users are already there. The needed data comes from the mock rather than from the backend. This allows the front-end developers to finish their site of the new feature independently. In certain cases, developers can use mocking to ship features faster. The great thing about Jest is that you use it's mock functions without any additional installations. In Jest you use mocking by employing Jest mock functions. It's also easy to test asynchronous code in Jest.
 
-//Jest allows you to perform snapshot testing - Snapshot testing is used to verify that there are no regressions in the DOM of your apps
+//Jest allows you to perform snapshot testing - Snapshot testing is used to verify that there are no regressions in the DOM of your apps after some changes to the codebase are made
+
+//Example of JEST testing
+function addFive(val) {
+  return val + 5;
+}
+module.exports = addFive; //The "module.exports" exports this function so that it can be used by other files in the project
+//To install JEST
+/*
+1. npm init -y to install package.json file and the -y flag automatically answers yes to all the questions the init command asks during installation
+2. npm install --save-dev jest
+3. After installation, replace the value of the test property with jest
+4. npm run test - which runs the test comman on all the code in the folder it was installed
+5.Create a separate test file to be used to write all tests
+*/
