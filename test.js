@@ -18,8 +18,8 @@ expect(concatStrings("abc", "def")).toBe("abcdef") //this is essentially stating
 //Examples of e2e testing frameworks: WebdriverJs, Protractor and Cypress
 
 
-
-//Integration testing
+//Integration testing: Typically involves testing how parts of your system interacts with other parts of your system - Testing how separate parts of your software works together. Examples include: React Testing library and Enzyme.
+//Integration tests are faster and cheaper than e2e tests
 
 
 //Unit testing
