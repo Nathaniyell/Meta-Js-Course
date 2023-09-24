@@ -68,3 +68,15 @@ const handleClicks = () => {
   }
 };
 h1.addEventListener("click", handleClicks);
+
+//JSON means javascript object notation which is a way of storing and sending data in javascript. It has several methods and also a syntax as shown below:
+
+const jsonStr = '{"greeting": "hello"}'
+JSON.parse(jsonStr)// converts the above json code to a plain javascript object {greeting: "hello"}
+
+const data = {
+firstName : "John",
+lastName: "Doe",
+greeting: "Hello"
+}
+JSON.stringify(data)//converts the data object into JSON format using the stringify method
