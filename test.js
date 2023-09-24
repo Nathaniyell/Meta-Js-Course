@@ -23,3 +23,8 @@ expect(concatStrings("abc", "def")).toBe("abcdef") //this is essentially stating
 //Unit testing: Process of testing the smallest units of your source code in isolation e.g testing a function or a method since these are the smallest piece of code. A unit is the smallest piece of code that you can test separately from the rest of the app. Unit tests are self-contained making it fast to test and easy to run
 
 //These three tests are generally used together when testing an application, starting with the unit test, then the integration test and finally the e2e test
+
+//Introduction to JEST
+//Jest is a javascript testing framework which is often used for testing code like React. It is maintained by META, it can also allow yoy to test Babel, TypeScript,Node,Angulat and various other frameworks
+
+//Code coverage is a measure of what percentage of your code is covered by tests. Code coverage is a handy tool to guage the amount of your codebase that is included tests. The higher the code coverage, the lower to the chance to have unidentified bugs
