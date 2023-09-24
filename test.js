@@ -44,6 +44,7 @@ module.exports = addFive; //The "module.exports" exports this function so that i
 1. npm init -y to install package.json file and the -y flag automatically answers yes to all the questions the init command asks during installation
 2. npm install --save-dev jest
 3. After installation, replace the value of the test property with jest
-4. npm run test - which runs the test comman on all the code in the folder it was installed
-5.Create a separate test file to be used to write all tests
+4.Create a separate test file to be used to write all tests.
+5. npm run test - which runs the test comman on all the specified function which was exported and receiveed by the test file
 */
+//Test Driven Development(TDD) is a streamlined process of writing code that will satisfy some requirements
