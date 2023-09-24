@@ -17,9 +17,9 @@ expect(concatStrings("abc", "def")).toBe("abcdef") //this is essentially stating
 //e2e - End to End testing: tries to imitate how a usier might interact with your app. Here you need to open your web application in a browser and then test it by interacting with it how a user might interact with it. In other words you are testing the entired finished software product from the perspective of the user. e2e tests are slow and time consuming
 //Examples of e2e testing frameworks: WebdriverJs, Protractor and Cypress
 
-
 //Integration testing: Typically involves testing how parts of your system interacts with other parts of your system - Testing how separate parts of your software works together. Examples include: React Testing library and Enzyme.
 //Integration tests are faster and cheaper than e2e tests
 
+//Unit testing: Process of testing the smallest units of your source code in isolation e.g testing a function or a method since these are the smallest piece of code. A unit is the smallest piece of code that you can test separately from the rest of the app. Unit tests are self-contained making it fast to test and easy to run
 
-//Unit testing
+//These three tests are generally used together when testing an application, starting with the unit test, then the integration test and finally the e2e test
