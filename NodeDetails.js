@@ -1,0 +1,1 @@
+//Node.js is a separate standalone environment. The existence of Node makes it possible to use javascript on the backend/server-side, making it possible to build a fullstack Javascript application
