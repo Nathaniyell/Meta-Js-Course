@@ -41,3 +41,13 @@ const dishData = [
         price: 6.45
     },
 ]
+function getPrices(taxBoolean) {
+    for (let dish of dishData) {
+        var finalPrice;
+        if (taxBoolean===true) {
+            finalPrice = dish.price * tax; //if the the boolean passed in is "true", calculate the final price and include the tax
+        } 
+    }
+}
+
+
