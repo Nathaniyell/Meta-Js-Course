@@ -46,7 +46,13 @@ function getPrices(taxBoolean) {
         var finalPrice;
         if (taxBoolean===true) {
             finalPrice = dish.price * tax; //if the the boolean passed in is "true", calculate the final price and include the tax
-        } 
+        } else if(taxBoolean===false){
+            finalPrice = dish.price; //if the value passed in is false, it should just display the dish price
+        } else {
+            console.log("You need to pass a boolean to the getPrices call!");
+            return;
+        }
+        console.log(`Dish: ${dish.name} Price: $${finalPrice}`);
     }
 }
 
