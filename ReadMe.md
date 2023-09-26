@@ -26,3 +26,14 @@ This course provided a comprehensive learning experience in JavaScript programmi
    - Classes, constructors, and inheritance.
    - Scope concepts.
 
+4. **Advanced JavaScript Features:**
+   - Working with the DOM for web interactivity.
+   - Utilizing template literals and data structures.
+   - More advanced JavaScript operations.
+
+5. **Testing and Compatibility:**
+   - Introduction to testing, including Jest.
+   - Handling JavaScript testing challenges.
+   - Writing tests for JavaScript code.
+
+
