@@ -36,4 +36,10 @@ This course provided a comprehensive learning experience in JavaScript programmi
    - Handling JavaScript testing challenges.
    - Writing tests for JavaScript code.
 
+## Completion Certificate
 
+I successfully completed this course and earned a certificate of completion. You can view my certificate by following this [link](https://coursera.org/share/a66272d9cc3bc97695ed383f42979a12).
+
+Feel free to explore the course materials, code examples, and projects included in this repository. I hope you find them helpful in your JavaScript learning journey!
+
+If you have any questions or would like to connect, please don't hesitate to reach out.
