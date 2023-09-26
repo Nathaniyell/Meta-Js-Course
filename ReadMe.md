@@ -14,4 +14,15 @@ This course provided a comprehensive learning experience in JavaScript programmi
    - Importance of JavaScript in programming.
    - Key JavaScript concepts, including variables, data types, operators, and conditionals.
 
+2. **Building Blocks of a Program:**
+   - Arrays, objects, and functions.
+   - Error prevention and handling.
+   - Custom object creation and manipulation.
+   - Advanced JavaScript features like destructuring and spread operators.
+
+3. **Programming Paradigms:**
+   - Functional programming principles.
+   - Object-oriented programming principles.
+   - Classes, constructors, and inheritance.
+   - Scope concepts.
 
