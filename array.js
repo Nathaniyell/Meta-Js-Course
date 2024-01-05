@@ -59,3 +59,10 @@ greet.charAt(4); //o
 
 greet.toUpperCase(); // "HELLO"
 greet.toLowerCase(); // "hello"
+
+let fruits = ["apple", "banana", "orange", "grape", "kiwi"];
+let citrus = fruits.slice(1,4)
+console.log(citrus) //output: ["banana", "orange", "grape"]
+
+let subset = fruits.slice(2)
+console.log(output) //["orange", "grape", "kiwi"]
