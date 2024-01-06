@@ -7,3 +7,5 @@
   */
  //If the links are internal to the app - using the <a> tag is simply not the React way of doing things. 
  //The default export is used when the function name is the same as the file name and named exports are used when you want the function name to be different from the file name
+
+ //A component is a single part or small piece of functionality like a button. Then you can think of a module as something that's larger than just one component like a series of components. This technique of splitting your code into several modules is known as modular programming, and it complements the component-based architecture of React.
