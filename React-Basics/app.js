@@ -13,3 +13,4 @@
  //Props
  //When two components communicate with each other, the component sending the props data is known as the parent, and the component receiving the props data is known as the child.
  //this parent-child relationship allows parent components of past data down to child components using props. It's also possible for parent components to send the same data to multiple child components
+//In programming, a pure function is a function that will always return the same outputs for the same argument values that are passed in.
