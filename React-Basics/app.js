@@ -9,3 +9,7 @@
  //The default export is used when the function name is the same as the file name and named exports are used when you want the function name to be different from the file name
 
  //A component is a single part or small piece of functionality like a button. Then you can think of a module as something that's larger than just one component like a series of components. This technique of splitting your code into several modules is known as modular programming, and it complements the component-based architecture of React.
+
+ //Props
+ //When two components communicate with each other, the component sending the props data is known as the parent, and the component receiving the props data is known as the child.
+ //this parent-child relationship allows parent components of past data down to child components using props. It's also possible for parent components to send the same data to multiple child components
